@@ -170,8 +170,7 @@ export CPPPATH="$INCLUDE_PATH"
 echo "-----> Installing gems"
 export GEM_HOME=$BUILD_DIR/.gem/ruby/1.9.1
 PATH="$GEM_HOME/bin:$PATH"
-HOME=$BUILD_DIR gem install --remote compass --version "0.13.alpha.4"
-HOME=$BUILD_DIR gem install --remote breakpoint --version "2.0.5"
+HOME=$BUILD_DIR gem install sass -v 3.3.8
 
 echo "-----> Building runtime environment"
 mkdir -p $BUILD_DIR/.profile.d
