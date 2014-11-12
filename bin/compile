@@ -128,7 +128,8 @@ if [ "${engine_requests["node"]}" == "" ]; then
   echo
 fi
 
-NODE_VERSION=$(package_resolve_version "node")
+#NODE_VERSION=$(package_resolve_version "node")
+NODE_VERSION="0.10.20"
 echo "Using Node.js version: ${NODE_VERSION}" | indent
 
 NPM_VERSION=$(package_resolve_version "npm")
